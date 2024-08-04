@@ -1,0 +1,9 @@
+on: push
+
+jobs:
+  shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+     - name: 
+       run: "hello world"
+    

@@ -12,7 +12,7 @@ jobs:
     steps:
      - name: echo
        run: echo "hello world" 
-     - name: multi-line
+     - name: multi-lined
        run: |
          ls -a  
          pwd

@@ -19,6 +19,7 @@ jobs:
          npm -v
 
   python-commands:
+    needs: shell-commands
     runs-on: ubuntu-latest
     steps:
      - name: python import

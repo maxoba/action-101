@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: python import
-       run:
+       run: |
          import platform
          print(platform.processor())
        shell: python       

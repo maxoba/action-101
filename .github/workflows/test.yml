@@ -4,6 +4,6 @@ jobs:
   shell-commands:
     runs-on: ubuntu-latest
     steps:
-     - name: 
-       run: "hello world"
+     - run: echo "hello world" 
+       
     

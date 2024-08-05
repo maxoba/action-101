@@ -30,7 +30,7 @@ jobs:
        shell: python       
   Windows-commands:
     runs-on: windows-latest
-    needs: shell-commands
+    needs: python-commands
     steps:
     - name: Directory
       run: Get-location

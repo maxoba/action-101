@@ -21,5 +21,9 @@ jobs:
          run: terraform init
        - name: plan   
          run: terraform plan
+         env:
+          AWS_ACCESS_KEY_ID: ${{secrets.ACCESS_KEY}}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_KEY}}
+
                
        

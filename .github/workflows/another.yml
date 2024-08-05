@@ -19,6 +19,10 @@ jobs:
           terraform_version: "1.1.7"
        - name: init
          run: terraform init
+         
+       - name: format
+         run: terraform fmt-recursive
+
        - name: plan   
          run: terraform plan
          env:

@@ -19,4 +19,7 @@ jobs:
           terraform_version: "1.1.7"
        - name: init
          run: terraform init
-              
+       - name: plan   
+         run: terraform plan
+               
+       

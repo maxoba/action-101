@@ -21,7 +21,7 @@ jobs:
          run: terraform init
 
        - name: format
-         run: terraform fmt -recursive
+         run: terraform fmt -check
 
        - name: plan   
          run: terraform plan

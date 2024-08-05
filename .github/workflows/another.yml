@@ -10,7 +10,9 @@ jobs:
       runs-on: ubuntu-latest
       steps:
        - name: terraform
-         run: echo "running terraform commands" 
+         run: echo "running terraform commands"
+       - name: checkout
+         uses: actions/checkout@v4
        - name: list
          run: ls
               

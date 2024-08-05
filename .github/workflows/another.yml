@@ -10,9 +10,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
        - name: terraform
+         id:  terraform
          run: echo "running terraform commands"
        - name: checkout
          uses: actions/checkout@v4
-       - name: list
-         run: ls
+       - uses: hashicorp/setup-terraform@v3
+         with:
+          terraform_version: "1.1.7"
+       - name: init
+         run: terraform init
               

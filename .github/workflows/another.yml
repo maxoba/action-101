@@ -11,7 +11,7 @@ jobs:
       steps:
        - name: terraform
          id:  terraform
-         run: echo "running terraform commands"
+         run: echo "running terraform command"
        - name: checkout
          uses: actions/checkout@v4
        - uses: hashicorp/setup-terraform@v3

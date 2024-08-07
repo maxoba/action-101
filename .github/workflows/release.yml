@@ -1,0 +1,14 @@
+name: release workflow
+on:
+  workflow_dispatch:
+
+jobs:
+   release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: Install modules
+        run:  npm install semantic-release @semantic-release/git @semantic-release/github -D
+      - name: release
+        run: npx semantic-releas

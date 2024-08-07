@@ -5,14 +5,16 @@ on:
 jobs:
    release:
     runs-on: ubuntu-latest
+
     steps:
       - name: checkout
         uses: actions/checkout@v3
       - name: install node
+
         uses: action/setup-node@v4
         with:
           node-version: 20
-      - name: Install modules
+      - name: Install module
         run:  npm install semantic-release @semantic-release/git @semantic-release/github -D
       - name: release
         run: npx semantic-release

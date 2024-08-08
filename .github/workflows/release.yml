@@ -16,11 +16,10 @@ jobs:
         with:
           node-version: 20
       - name: Install modules
-=======
+
       - name: checkout
         uses: actions/checkout@v3
-      - name: Install module
->>>>>>> 76673e9658754166d5888ee00216b96402f6e071
+      - name: Install modules
         run:  npm install semantic-release @semantic-release/git @semantic-release/github -D
       - name: release
         run: npx semantic-release

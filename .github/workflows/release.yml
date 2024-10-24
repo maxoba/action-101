@@ -14,6 +14,8 @@ jobs:
         uses: action/setup-node@v4
         with:
           node-version: 20
+      - name: checkout
+        uses: actions/checkout@v3
       - name: Install modules
         run:  npm install semantic-release @semantic-release/git @semantic-release/github -D
       - name: release
